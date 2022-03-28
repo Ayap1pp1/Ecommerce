@@ -1,0 +1,62 @@
+﻿@model ProductsViewModel
+@{
+    ViewData["Title"] = "Home";
+
+}
+<div class="product-listing-page">
+    <label>
+        <select>
+            @foreach (var cat in Model.ProductCategories)
+            {
+                <option>@cat </option>
+            }
+
+        </select>
+    </label>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
+
+                @foreach (var product in Model.Products)
+                {
+                    <ul class="col-lg-4 col-md-6 @(product.Popular == true ? "featuredLable" : "")">
+
+                        <li class="card @(product.Popular == true ? "featured" : "") shadow-sm">
+                            <a href="@Url.Action("Details", "Products", new { id = product.Id })">
+                                @if (product.Image != null)
+                                {
+                                    <img src="@product.Image" />
+                                }
+                                <div class="product-title">
+                                    <h3>@product.Title</h3>
+                                </div>
+                                <div class="italicFont">
+                                    <p>@product.Category</p>
+                                </div>
+                                <div class="product-text">
+                                    <p>@product.Description</p>
+                                </div>
+
+                                <div class="product-price">
+                                    <p>@product.Price<span>$</span></p>
+                                </div>
+
+                                @using (Html.BeginForm("Details", "Products", new { id = product.Id }, FormMethod.Get))
+                                {
+                                    <button type="button" class="btn btn-primary">Show Details</button>
+                                }
+
+                            </a>
+                        </li>
+                    </ul>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+

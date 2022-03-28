@@ -1,0 +1,49 @@
+﻿@model Product
+
+<div class="product-details-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="product-details-image">
+                    @if (Model.Image != null)
+                    {
+                        <img src="@Model.Image" />
+                    }
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="product-details-text">
+                    <h2>@Model.Title</h2>
+                    <div class="flex-category-rate">
+                        <div class="italicFont">
+                            <p>@Model.Category</p>
+                        </div>
+                        <div class="rate">
+                            <p>@Model.Rating.Rate<span>/ 5</span></p>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>@Model.Description</p>
+                    </div>
+                    <div class="product-price">
+                        <p>@Model.Price<span>$</span></p>
+                    </div>
+                </div>
+                <div class="product-details-page-buttons">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="subPlusButton">
+                                <button type="button" id="sub" class="sub">-</button>
+                                <input type="number" id="1" value="1" min="1" max="10" />
+                                <button type="button" id="add" class="add">+</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 addButton">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

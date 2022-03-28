@@ -1,0 +1,296 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.startPage-heading h2 {
+    color: #000080;
+}
+
+.startPage .container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-listing-page img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.product-listing-page .product-title h3 {
+    color: black;
+    padding-top: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 100px;
+}
+
+.product-listing-page .row {
+    margin: auto
+}
+
+.product-listing-page .col {
+    margin-bottom: 50px;
+}
+
+.product-listing-page li {
+    padding: 15px 20px;
+}
+
+.product-listing-page .product-text {
+    text-overflow: ellipsis;
+    height: 100px;
+    overflow: hidden;
+}
+
+.product-listing-page li a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-listing-page ul {
+    margin-bottom: 20px;
+}
+
+.product-listing-page ul:hover {
+        transform: scale(1.05);
+        font-weight: bold;
+}
+
+.product-listing-page .product-price {
+    font-weight:bold;
+}
+
+.product-details-page img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-details-page .container {
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.flex-category-rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.italicFont {
+    font-style: italic;
+}
+
+.product-details-page .flex-category-rate .rate {
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.product-details-page .product-price {
+  font-weight:bold;
+}
+
+.featured {
+    border: solid;
+    border-color: hotpink;
+}
+
+.featuredLable:before {
+    content: "Popular";
+    color: white;
+    position: absolute;
+    writing-mode: vertical-rl;
+    background: hotpink;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+    z-index: 50;
+}
+
+.product-details-page .product-details-page-buttons .subPlusButton input {
+    text-align:center;
+}
+
+.product-details-page input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product-details-page input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.product-details-page .product-details-page-buttons .subPlusButton {
+    padding-top:5px;
+}
+
+.product-details-page .addButton {
+   margin-left:-125px;
+}
+
+/*Breakpoints*/
+@media(max-width:1200px) {
+    .product-listing-page img {
+        width: 200px;
+        height: 250px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .product-details-page .addButton {
+        margin-left: -85px;
+    }
+}
+
+@media(max-width:991px) {
+    .product-details-page .product-details-page-buttons .subPlusButton {
+        padding-bottom: 15px;
+    }
+    .product-details-page .addButton {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .product-listing-page ul:hover {
+        transform: none;
+        font-weight: normal;
+    }
+
+    .product-listing-page .product-title h3 {
+        height: 93px;
+    }
+
+    .product-listing-page .product-price {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .product-listing-page li a {
+        text-align: center;
+    }
+
+    .product-details-page .product-price {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .product-details-page .addButton {
+        text-align: center;
+    }
+
+    .product-details-page .product-details-page-buttons .subPlusButton {
+        text-align: center;
+    }
+
+
+    .product-details-page .product-details-image {
+        padding-bottom: 15px;
+    }
+}
+ 
+@media(max-width:450px) {
+    .product-listing-page .product-title h3 {
+        font-size: 19px;
+        height: 79px;
+    }
+    .product-listing-page .product-price {
+        padding-top: 15px;
+
+    }
+
+    .product-details-page .product-price {
+        padding-top: 15px;
+    }
+
+
+}
+
+@media(max-width:350px) {
+    .product-listing-page li a img {
+        width: 150px;
+        height: 200px;
+    }
+    .product-details-page .product-details-image img {
+        width: 150px;
+        height: 200px;
+    }
+}
